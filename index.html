@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Titanic Prediction</title>
+</head>
+<body>
+    <h1>Titanic Survival Prediction</h1>
+
+    <form method="POST">
+        <label>Age:</label><br>
+        <input type="number" step="any" name="age" required><br><br>
+
+        <label>Sex:</label><br>
+        <select name="sex">
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+        </select><br><br>
+
+        <label>Embarked:</label><br>
+        <select name="embarked">
+            <option value="0">Southampton (S)</option>
+            <option value="1">Cherbourg (C)</option>
+            <option value="2">Queenstown (Q)</option>
+        </select><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    <h2>{{ result }}</h2>
+</body>
+</html>
